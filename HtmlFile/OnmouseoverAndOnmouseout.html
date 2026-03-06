@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1  id="text">
+        Chỉ chuột đến tôi
+    </h1>
+
+    <script>
+        var event = document.getElementById("text");
+        event.addEventListener("mouseover", mouseover);
+        event.addEventListener("mouseout", mouseout);
+
+        function mouseover() {
+            document.getElementById("text").style.color = "red";
+        }
+        function mouseout() {
+            document.getElementById("text").style.color = "black";
+        }
+    </script>
+
+</body>
+</html>
