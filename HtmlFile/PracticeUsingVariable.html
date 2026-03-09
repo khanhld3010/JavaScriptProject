@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <h1>Bài Tập 1</h1>
+        <form onsubmit="handleSubmit1(); event.preventDefault(); return false;">
+            <label>
+                Điểm vật lý
+                <input id="physic" type="number" min="1" max="10" step="1" value="1">
+            </label>
+            <br>
+            <label>
+                Điểm Hóa Học
+                <input id="chemistry" type="number" min="1" max="10" step="1" value="1">
+            </label>
+            <br>
+            <label>
+                Điểm Sinh Học
+                <input id="biology" type="number" min="1" max="10" step="1" value="1">
+            </label>
+            <br>
+            <button type="submit" > Tính toán</button>
+        </form>
+    </div>
+
+
+    <div>
+        <h1>Bài Tập 2</h1>
+        <form onsubmit="handleSubmit2(); event.preventDefault(); return false;">
+            <label>
+                Nhập Độ C để chuyển thành độ F
+                <input id="celsius" type="number" min="1" max="" step="1" value="1">
+            </label>
+            <button type="submit">Tính toán</button>
+        </form>
+
+    </div>
+    <div>
+        <h1>Bài Tập 3</h1>
+        <p>Tính diện tích hình tròn</p>
+        <form onsubmit="handleSubmit3(); event.preventDefault(); return false;">
+            <label>
+                Nhập vào bán kính
+                <input id="radius" type="number" min="1" max="" step="1" value="1">
+            </label>
+            <button type="submit">Tính toán</button>
+        </form>
+
+    </div>
+    <div>
+        <h1>Bài Tập 4</h1>
+        <p>Tính chu vi hình tròn</p>
+        <form onsubmit="handleSubmit4(); event.preventDefault(); return false;">
+            <label>
+                Nhập vào đường kính
+                <input id="diameter" type="number" min="1" max="" step="1" value="1">
+            </label>
+            <button type="submit">Tính toán</button>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="../JavaScriptFile/PracticeUsingVariable.js"></script>
+
+</body>
+</html>
