@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hiển thị alert xin chào</h1>
+<button type="button" onclick="showMessage();">Click Me!</button>
+<script>
+    function showMessage() {
+        alert("Xin chào")
+    }
+</script>
+
+<h1>
+    Hiển thị dòng xin chào
+</h1>
+<p id="hiddenMessage"></p>
+<button type="button" onclick="hideMessage();">Click Me!</button>
+<script>
+    function hideMessage() {
+        document.getElementById("hiddenMessage").innerHTML = "xin chào";
+    }
+</script>
+
+
+<!--câu lệnh này sẽ tải lại cả trang html-->
+<h1>
+    Hiển thị dòng xin chào (Sử dụng document.write()
+</h1>
+<button  type="button" onclick="hideMessage1();">Click Me!</button>
+<script>
+    function hideMessage1() {
+        document.write("Xin chào")
+    }
+</script>
+
+<h1>Hiển thị console.log xin chào</h1>
+<button type="button" onclick="consoleLog();">Click Me!</button>
+<script>
+    function consoleLog() {
+       console.log("Xin Chào")
+    }
+</script>
+
+
+
+
+</body>
+</html>
