@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+    <h1>Ứng dụng chuyển đổi tiền tệ</h1>
+    <form  onsubmit="switchMoney(); event.preventDefault(); return false;" >
+        <label>
+            Amount
+            <input type="number" name="amount" id="amount" min="1" max="" step="1" value="1">
+        </label>
+        <label>
+            From Currency
+            <select name="fromCurrency" id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="VND">VND</option>
+            </select>
+        </label>
+        <label>
+            To Currency
+            <select name="toCurrency" id="toCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="VND">VND</option>
+            </select>
+        </label>
+        <button type="submit">Convert</button>
+    </form>
+
+    <p id="hiddenText"></p>
+
+
+
+    <script src="../JavaScriptFile/ChangMoneyExam.js"></script>
+</body>
+</html>
