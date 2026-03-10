@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" onsubmit="calculate(); event.preventDefault(); return false;">
+    <label>
+        First Number:
+        <input type="number" name="" id="firstNumber" placeholder="First Number">
+    </label>
+    <br>
+    <label>
+        Second Number:
+        <input type="number" name="" id="secondNumber" placeholder="Second Number">
+    </label>
+    <br>
+        <button type="submit" name="operation" value="add">Addition(+)</button>
+        <button type="submit" name="operation" value="sub">Subtraction(-)</button>
+        <button type="submit" name="operation" value="mul">Multiplication(*)</button>
+        <button type="submit" name="operation" value="div">Division(/)</button>
+</form>
+
+<p id="hiddenText"></p>
+
+<script src="../JavaScriptFile/Calculator.js"></script>
+</body>
+</html>
